@@ -1,0 +1,147 @@
+body {
+    font-family: 'Montserrat', sans-serif!important;
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important;
+    background-image: url("https://cdn.glitch.com/edc1e7da-0e2a-4c84-9338-b885bf078d74%2Fannie-spratt-hX_hf2lPpUU-unsplash.jpg?v=1575784466871");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+  text-align: center!important
+}
+
+#dash-nav {
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+  font-size: 1.5em;
+    transition: all 0.8s;
+}
+
+#dash-nav .navbar-brand {
+    color: #4c8f77;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px;
+}
+
+#dash-nav .navbar-nav {
+    background-color: #c1dbcc;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+#dash-nav .nav-item a {
+    color: #3d5e4c;
+}
+
+#dash-nav .active {
+    font-weight: bold;
+    background-color:#b4d1bc;
+  
+}
+
+#group-list h2 {
+    padding-top: 10px;
+    text-align: center;
+    margin:0px;
+}
+
+
+#group-list .group-bg {
+    padding: 10px;
+    margin: auto;
+    min-width: 50%;
+    max-width: 500px;
+    border-radius: 30px;
+    background-size: auto;
+}
+
+#group-list .list-group-item {
+    background-color: #eef2eb;
+    border-radius: 45px;
+/*     border: 1px solid #3d5e4c; */
+    padding: 15px;
+    font-size:1.5em;
+    text-align:center;
+}
+
+#group-list .list-group-item a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#add-group form {
+    border: 5px solid #87ab9d;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 60%;
+    margin: auto;
+}
+
+#add-group .btn-lg {
+    background: #cce3da;
+}
+
+#list input {
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+
+
+#error{
+  color:red;
+}
+
+#memberlist {
+  
+}
+
+#memberlist ul li {
+  font-size: 1.25em;
+  margin:2%;
+  padding: 2%;
+  list-style:none;
+/*   border: 1px solid #3d5e4c; */
+  border-radius: 20px;
+  text-align:center;
+  background-color:#eef2eb;
+  
+}
+
+.headers label {
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25em;
+  
+}
+
+#editform {
+  padding: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+
+#memberlist ul li {
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 10px;
+  list-style:none;
+/*   border: 3px solid #3d5e4c; */
+  border-radius: 20px;
+  text-align:center;
+  background-color:#eef2eb;
+  margin-right:35px;
+  max-width: 50%;
+  
+}
+  
+}

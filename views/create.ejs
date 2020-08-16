@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Group</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/dashboard.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5d2ed13a15.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" id="dash-nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand"><%= currentUser.name()%>'s Dashboard</a>
+      </div>
+
+      <ul class="nav navbar-expand-md navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/<%=user.username%>/groups">My Groups</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/<%=user.username%>/create">Create Group</a>
+        </li>
+        <li class="nav-item" style="float:right; font-weight:bold;">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+        
+  <div style="text-align:center; font-size:3em; font-color:black;">
+            <i class="fas fa-users"></i>
+  </div>
+    <h2 style="text-align:center; font-family: 'Montserrat', sans-serif; ">
+      Create A New Group
+    </h2>
+
+    
+    <div id="add-group" class="form-group">
+
+      <form action="/<%=user.username%>/create" method="POST">
+        <div id="list" class="form-group">
+          <input name="groupname" class="form-control mx-auto" type="text" placeholder="Enter Group Name" required autofocus>
+          <div style="text-align:center; margin-top: 3%">
+            <button type="submit" class="btn-lg">Create</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/twbs-pagination/1.4.2/jquery.twbsPagination.js"></script>
+</body>
+
+</html>
