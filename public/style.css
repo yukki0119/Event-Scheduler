@@ -1,0 +1,261 @@
+body {
+	font-family: 'Montserrat', sans-serif!important;
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important;
+}
+
+#login-bg.container-fluid {
+	padding: 0;
+	height: 100%;
+	position: absolute;
+}
+
+/* Background image an color divs*/
+
+.bg-img , .bg-color {
+	min-width: 50%;
+	vertical-align: top;
+	padding: 0;
+	margin-left: 0;
+	height: 100%;
+	background-color: #CAF0D3;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.bg-color {
+	margin-left: -5px;
+}
+
+.bg-img {
+	background-image: url(https://cdn.glitch.com/edc1e7da-0e2a-4c84-9338-b885bf078d74%2Flogin-background.jpeg?v=1575681393136);>
+	background-size: cover;
+}
+
+#loginSignup{
+  padding-top: 5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.loginSignup {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	padding: 10px;
+/* 	padding-top: 5px; */
+}
+
+.loginSignup h1 {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: 3px;
+}
+
+.loginSignup form {
+	max-width: 400px;
+	margin: 2em auto;
+}
+
+.loginSignup .btn {
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 20px;
+	padding: 14px;
+	background-color: #00B72E;
+}
+
+.form-group input {
+	font-size: 20px;
+	font-weight: lighter;
+	border: none;
+	background-color: #F0F0F0;
+	color: #465347!important;
+	padding: 26px 30px;
+	border-radius: 50px;
+	transition : 0.2s;
+}
+
+
+/* Media queries */
+
+@media(max-width: 600px) {
+  a header{
+	display: block;
+}
+	.bg-img , .bg-color {
+	min-width: 100%;
+	height: 50%;
+	margin: 0;
+	}
+
+	.forgot-password {
+	text-align: right;
+	float: left;
+	padding: 20px 0;
+	}
+
+
+	#login {
+		padding-top: 50px;
+	}
+  
+  
+
+}
+
+@media (max-width: 1024px) {
+  header {
+	background: url(https://cdn.glitch.com/edc1e7da-0e2a-4c84-9338-b885bf078d74%2Fheader-bg.jpg?v=1575686865031) no-repeat bottom right;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+	height: 100%;
+  }
+  header p {
+	color: rgba(255,255,255,0.8);
+	font-size: 60px;
+	margin-bottom: 90%;
+  } 
+  
+  .intro-text > a {
+  display:block;
+  width: 20%;
+  height: 20%;
+  margin:5% auto;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 2560px) {
+  header {
+	background: url(https://cdn.glitch.com/edc1e7da-0e2a-4c84-9338-b885bf078d74%2Fheader-bg.jpg?v=1575686865031) no-repeat bottom right;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+	height: 100%;
+  }
+  header p {
+	color: rgba(255,255,255,0.8);
+	font-size: 20px;
+	margin-bottom: 20%;
+  } 
+  
+   .intro-text > a {
+  
+}
+  
+  
+}
+
+
+.intro-text {
+	position: relative;
+	padding-top: 250px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 170px;
+}
+.intro-text H1 {
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+/*   background-color: rgba(248, 248, 248, 0); */
+	border-color: rgba(231, 231, 231, 0);
+  text-transform: uppercase;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 900;
+/*   background-color: #138D75; */
+}
+
+#usermenu {
+  background-color: #fff;
+}
+
+#menu {
+	padding: 5px;
+	transition: all 0.8s;
+}
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+#menu a.navbar-brand {
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 900;
+}
+#menu a.navbar-brand i.fa {
+	color: rgba(255,255,255,0.7);
+	margin-right: 3px;
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #eeeeee;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #0dad8d;
+}
+
+
+
+.on {
+	background-color: #222222 !important;
+	padding: 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #0dad8d !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #0dad8d;
+	border-color: #0dad8d;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+.btn-default {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	background-color: transparent;
+	border: 2px solid rgba(255,255,255,0.8);
+	margin: 0 8px;
+	padding: 12px 24px;
+	font-size: 16px;
+	transition: all 0.5s;
+	border-radius: 4px;
+  text-align:center;
+}
+
+
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+	background-color: #fff;
+	color: #0dad8d;
+	border-color: #fff;
+/*   text-align:center; */
+}
+
+.list-group-item{
+  background-color: black !important;
+}
+
+#group {
+background-color:black !important;
+}
+
